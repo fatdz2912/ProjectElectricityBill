@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+}
+.form {
+  width: 60%;
+  margin: 0 auto;
+  padding: 3vh 2vw;
+  border: 3px rgb(72, 222, 72) solid;
+  margin-bottom: 6vh;
+}
+
+.form h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(35, 35, 248);
+}
+
+.form label {
+  display: inline-block;
+  width: 20%;
+}
+
+.form input {
+  width: 79.38%;
+  padding: 2px 3px;
+  outline: none;
+}
+
+.form div {
+  width: 100%;
+  margin-top: 0.9vh;
+}
+
+.form .Calculate {
+  display: flex;
+  gap: 1em;
+}
+
+.form .Calculate button {
+  flex: 1;
+  outline: none;
+  border: none;
+  background-color: rgb(35, 35, 248);
+  color: #fff;
+  padding: 4px 2px;
+}
+
+.form .Calculate button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.form > p {
+  width: 100%;
+  text-align: center;
+  color: red;
+  font-size: 1.6rem;
+}
+
+table {
+  width: 70%;
+  margin: 0 auto;
+}
+
+table,
+thead,
+tbody,
+tr,
+td,
+th {
+  border: 2px solid rgb(200, 200, 232);
+}
+
+table td {
+  text-align: center;
+}
+
+table td:nth-child(1),
+table td:nth-child(3) {
+  text-align: right !important;
+}
+
+table td div {
+  display: flex;
+  justify-content: space-around;
+  gap: 1em;
+}
+
+table td div a {
+  display: inline-block;
+  flex: 1;
+}
+
+table td div a button {
+  outline: none;
+  border: 1px solid #918b8b;
+  width: 100%;
+}
+
+table td div button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+table button {
+  border: rgb(35, 35, 248) 1px solid;
+  width: 100%;
+  border-radius: 2px;
+}
+table button:hover {
+  color: white;
+  background-color: rgb(35, 35, 248);
+}
+.quaylai {
+  margin-left: 20px;
+  cursor: pointer;
+  padding: 1em;
+  outline: none;
+  border: #ccc solid 1px;
+  text-decoration: none;
+}
+@media screen and (max-width: 1024px) {
+  table {
+    width: 85%;
+  }
+  .form {
+    width: 85%;
+  }
+  .form input {
+    width: 78%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form,
+  table {
+    width: 95%;
+  }
+  .form label {
+    display: inline-block;
+    width: 30%;
+  }
+  .form input {
+    width: 69%;
+  }
+}

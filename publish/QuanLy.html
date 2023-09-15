@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý thông tin Khách hàng</title>
+    <link rel="stylesheet" href="../styles/admin.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <h2>Calculate monthly electricity bill for Customers</h2>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" name="" id="name" />
+        </div>
+        <div>
+          <label for="address">Address:</label>
+          <input type="text" name="" id="address" />
+        </div>
+        <div>
+          <label for="startUp">start-up period:</label>
+          <input type="number" name="" id="startUp" />
+        </div>
+        <div>
+          <label for="end">End-of-item digits:</label>
+          <input type="number" name="" id="end" />
+        </div>
+        <div>
+          <label for="vat">The VAT tax:</label>
+          <input type="text" name="" id="vat" />
+        </div>
+        <div class="Calculate">
+          <button class="submit">Calculate</button>
+          <button type="reset" class="clear">Clear</button>
+          <button type="button" class="update">Update</button>
+          <button type="reset" class="clear">Cancle</button>
+        </div>
+        <p></p>
+      </div>
+      <table>
+        <thead>
+          <th>STT</th>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Start-up-period</th>
+          <th>End of item digits</th>
+          <th>VAT</th>
+          <th>into money</th>
+          <th>Action</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <a class="quaylai" href="./Admin.html">Quay lại</a>
+    </div>
+  </body>
+  <script type="module" src="../src/quanly.js"></script>
+</html>

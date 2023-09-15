@@ -1,0 +1,394 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
+
+.container {
+  max-width: 1300px !important;
+}
+
+.open {
+  display: flex !important;
+}
+
+@keyframes modalFace {
+  from {
+    opacity: 0;
+    transform: translateY(-140px);
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Header */
+.header {
+  height: var(--height-header);
+  width: 100%;
+  background-color: var(--primakey-color);
+  position: fixed;
+  z-index: 4;
+}
+
+.header-nav {
+  height: 100%;
+}
+
+.header .container {
+  height: 100%;
+  padding-top: 10px;
+}
+
+.header .nav .nav-item a,
+.header .nav .nav-item span,
+.header .nav .nav-item i {
+  color: var(--text-primakey-color);
+  font-size: 1.6rem;
+}
+
+.nav-header {
+  height: 100%;
+}
+
+.header .nav {
+  width: 100%;
+  align-items: center;
+  height: 100%;
+  justify-content: right;
+  gap: 1em;
+}
+
+.header .nav i {
+  font-size: 1.6rem;
+}
+
+.header .nav .nav-item i + i {
+  margin-left: 1em;
+}
+
+.header .nav .nav-item a {
+  font-size: 1.2rem;
+}
+
+.header .nav .nav-item a:hover,
+.header .nav .nav-item i:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.header .row .seach {
+  background-color: var(--text-primakey-color);
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 5.5em;
+}
+
+.banner {
+  width: 100%;
+}
+
+.banner img {
+  margin-top: 25vh;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Login */
+.nav-login {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  font-size: 1.2rem;
+}
+
+.open {
+  display: flex !important;
+}
+
+.nav-login .content-login {
+  width: 70%;
+  height: 62vh;
+  background-color: #fff;
+  position: relative;
+  margin: 10px;
+  animation: ease modalFace 0.5s;
+}
+
+.nav-login .content-login > i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #000;
+  z-index: 6;
+  font-size: 2rem;
+  padding: 0 0.4rem;
+}
+
+.nav-login .content-login > i:hover {
+  background-color: red;
+}
+
+.nav-login .content-login .forget {
+  width: 80%;
+  margin: 0.4% 0;
+  display: flex;
+  justify-content: right;
+}
+
+.nav-login .cuahang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  background-color: var(--primakey-color);
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.password {
+  display: block;
+}
+
+.nav-login .name:first-child {
+  margin-top: 4vh;
+}
+
+.nav-login .name {
+  margin-top: 2vh;
+}
+
+.body-login {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pay {
+  margin-top: 15px;
+}
+
+.pay,
+.create {
+  border: none;
+  border-radius: 2px;
+}
+
+.pay,
+.create,
+.nav-login .name {
+  width: 70%;
+  padding: 0.5rem;
+  outline: none;
+  border: #7c7474 1px solid;
+}
+
+.create {
+  margin-top: 1.5vh;
+  margin-bottom: 2vh;
+  color: #000;
+  text-align: center;
+  border: 2px solid #ccc;
+  outline: none;
+}
+
+.create:hover {
+  border: 2px var(--primakey-color) solid;
+}
+
+.fter {
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+}
+
+.pay {
+  background-color: var(--primakey-color);
+  color: #fff;
+}
+
+.pay:hover {
+  opacity: 0.7;
+}
+
+.body-login > p {
+  color: red;
+  font-size: 1.3rem;
+}
+
+/* Đăng ký */
+.form-register {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  font-size: 1.2rem;
+}
+
+.form-register a {
+  color: var(--primakey-color);
+}
+
+.form-register .register-body {
+  width: 60%;
+  background-color: #fff;
+  height: 80vh;
+  animation: ease modalFace 0.5s;
+}
+
+.form-register .header-register {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  color: var(--primakey-color);
+}
+
+.header-register .chuyendoi {
+  margin-top: -8px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.auth-form {
+  margin-top: 3vh;
+  margin: 4vh;
+}
+
+.input-register {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.auth-form-input {
+  margin-top: 1.5vh;
+  padding: 8px;
+  flex: 1;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.auth-form-aside {
+  margin-top: 2vh;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.nav-login .accout {
+  width: 70%;
+}
+
+.accout {
+  margin-top: 1.5vh;
+}
+
+.form-register .accout label {
+  width: 15%;
+}
+
+.accout input + input {
+  margin-left: 10%;
+}
+
+.btn-controls {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+}
+
+.header-register .chuyendoi,
+.btn-controls .btn {
+  width: 40%;
+  outline: none;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  font-size: 1.3rem;
+}
+
+.header-register .chuyendoi,
+.btn-controls .btn:first-child {
+  background-color: #fff;
+}
+
+.btn-controls .btn:first-child:hover {
+  cursor: pointer;
+  background-color: #ccc;
+}
+
+.btn-controls .btn:nth-child(2) {
+  background-color: var(--primakey-color);
+  color: #fff;
+}
+
+.btn-controls .btn:nth-child(2):hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.info {
+  width: 100%;
+  text-align: center;
+  color: red;
+  font-size: 1.3rem;
+}
+
+.avatar {
+  position: relative;
+}
+
+.dangxuat {
+  display: none;
+  background: #fff;
+  width: 122px;
+  position: absolute;
+  top: 22px;
+  right: 0vw;
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 5;
+}
+
+.dangxuat li {
+  list-style: none;
+}
+
+.dangxuat li:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .accout label {
+    width: 100%;
+  }
+  .form-register .register-body {
+    width: 90%;
+  }
+  .nav-login .content-login {
+    height: 70vh;
+    width: 90%;
+  }
+}

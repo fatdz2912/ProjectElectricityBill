@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+table {
+  width: 70%;
+  margin: 0 auto;
+}
+
+table,
+thead,
+tbody,
+tr,
+td,
+th {
+  border: 2px solid #ccc;
+}
+
+table td {
+  text-align: center;
+}
+
+table td:nth-child(1),
+table td:nth-child(3) {
+  text-align: right !important;
+}
+
+table td div {
+  display: flex;
+  justify-content: space-around;
+  gap: 1em;
+}
+
+table td div a {
+  display: inline-block;
+  flex: 1;
+}
+
+table td div a button {
+  outline: none;
+  border: 1px solid #918b8b;
+  width: 100%;
+}
+
+table td div button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.quaylai {
+  cursor: pointer;
+  padding: 1em;
+  outline: none;
+  border: #ccc solid 1px;
+}
+.quaylai:hover {
+  background-color: #ccc;
+}
+h1 {
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  table {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 768px) {
+  table {
+    width: 100%;
+  }
+}

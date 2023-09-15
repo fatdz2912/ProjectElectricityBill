@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../styles/root.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="header">
+            <div class="container">
+                <div class="row header-nav">
+                    <div class="nav-header col-md-12">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link dangky " href="#">Đăng ký</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dangnhap" href="#">Đăng nhập</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="banner">
+            <img src="../images/banner.jpg" alt="">
+        </div>
+        <div class="nav-login">
+            <div class="content-login">
+                <i class="fa-sharp fa-solid fa-xmark"></i>
+                <div class="cuahang">Đăng Nhập</div>
+                <div class="body-login">
+                    <input type="text" name="" id="txtTenDangNhap" class="name" placeholder="Tên đăng nhập">
+                    <input type="password" name="" id="matKhau" class="name" placeholder="Mật khẩu">
+                    <input type="button" value="Đăng nhập" class="pay btDangNhap"></input>
+                    <div class="accout">
+                        <label for="">Đăng nhập với vai trò:</label>
+                        <input type="radio" name="accout" id="option1" value="User" checked>User
+                        <input type="radio" name="accout" id="option3" value="Admin">Admin
+                    </div>
+                    <button class="create">Tạo tài khoản</button>
+                    <p></p>
+                    <div class="forget">
+                        <a href="#">Quên mật khẩu</a>
+                    </div>
+                    <fotter class="fter">
+                        Need
+                        <a href="#">Help</a>
+                    </fotter>
+                </div>
+
+            </div>
+        </div>
+        <div class="form-register">
+            <div class="register-body">
+                <div class="header-register content">
+                    <div class="heading-register">Đăng ký</div>
+                    <button class="chuyendoi  btn-dangnhap">Đăng nhập</button>
+                </div>
+                <div class="auth-form content">
+                    <div class="input-register">
+                        <input type="email" class="auth-form-input txtGmail" placeholder="Email của bạn">
+                    </div>
+                    <div class="input-register">
+                        <input type="text" class="auth-form-input txtTenTaiKhoan" placeholder="Tên tài khoản">
+                    </div>
+                    <div class="input-register">
+                        <input type="password" class="auth-form-input password" placeholder="Mật khẩu">
+                    </div>
+                    <div class="input-register">
+                        <input type="password" class="auth-form-input againpassword"
+                            placeholder="Nhập lại mật khẩu">
+                    </div>
+                    <div class="accout">
+                        <label for="">Accout:</label>
+                        <input type="radio" name="accoutt" id="option1" value="User" checked>User
+                        <input type="radio" name="accoutt" id="option2" value="Admin">Admin
+                    </div>
+                    <p class="info"></p>
+                    <div class="auth-form-aside">
+                        <p class="auth-form-policy-text">Bằng việc đăng ký, bạn đã đồng ý với shop về
+                            <a href="" class="auth-form-policy-link">Điều khoản dịch vụ </a> &
+                            <a href="" class="auth-form-policy-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+                    <div class="btn-controls">
+                        <button class="btn btn-js">TRỞ LẠI</button>
+                        <button class="btn btn-dangky">ĐĂNG Ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="../src/home.js"></script>
+
+</html>

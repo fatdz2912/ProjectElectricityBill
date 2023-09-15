@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biên lai đóng tiền điện</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .thanhtoan {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    span,
+    p {
+        display: inline-block;
+        font-size: 1.5rem;
+    }
+
+    p {
+        width: 40%;
+    }
+
+    div {
+        margin-top: 1em;
+    }
+    div:nth-child(6) {
+        text-align: right;
+    }
+    button {
+        cursor: pointer;
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="thanhtoan">
+            <h1>BIÊN NHẬN THANH TOÁN TIỀN ĐIỆN</h1>
+            <div>
+                <p>Tên KH:</p>
+                <span class="ten"></span>
+            </div>
+            <div>
+                <p>Địa chỉ:</p>
+                <span class="address"></span>
+            </div>
+            <div>
+                <p>ID hóa đơn:</p>
+                <span class="hoadon"></span>
+            </div>
+            <div>
+                <p>Số tiền cần thanh toán:</p>
+                <span class="money"></span>
+            </div>
+            <div>
+                <button class="quaylai">quay lại</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="../src/dongtien.js"></script>
+
+</html>
